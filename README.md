@@ -12,7 +12,7 @@ Tailwind CSS — For rapid, responsive styling.
 
 HTML & CSS — Base structure and custom tweaks.
 
-(Optional) TypeScript-ready structure, though not strictly required.
+Javascript
 
 📂 How to View / Run the Project
 Local Setup
@@ -23,7 +23,7 @@ Edit
 git clone https://github.com/OnyekwereMichael/tailux.git
 
 # 2️⃣ Navigate into the folder
-cd your-repo-name
+cd tailux
 
 # 3️⃣ Install dependencies
 npm install
