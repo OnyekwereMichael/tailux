@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+📊 Home Dashboard UI
+Overview
+This project recreates the Home Dashboard UI (just the home section, not the entire dashboard).
+The focus is on layout, structure, and responsiveness, ensuring it works smoothly across desktop, tablet, and mobile screens.
 
-## Getting Started
+While I’ve kept the design close to the original reference, I also made small adjustments to improve spacing, readability, and mobile friendliness.
 
-First, run the development server:
+🛠 Tools & Frameworks Used
+Next.js — For building a fast and structured UI.
 
-```bash
+Tailwind CSS — For rapid, responsive styling.
+
+HTML & CSS — Base structure and custom tweaks.
+
+Javascript
+
+📂 How to View / Run the Project
+Local Setup
+bash
+Copy
+Edit
+# 1️⃣ Clone the repository
+git clone https://github.com/OnyekwereMichael/tailux.git
+
+# 2️⃣ Navigate into the folder
+cd tailux
+
+# 3️⃣ Install dependencies
+npm install
+
+# 4️⃣ Run the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Then open http://localhost:3000 in your browser.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🎯 Key Features
+Responsive Layout — Works seamlessly on desktop, tablet, and mobile.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Clean Structure — Easy to read, modify, and extend.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+UI-Accurate — Matches the reference layout closely while improving usability.
 
-## Learn More
+📌 Assumptions & Creative Decisions
+Only the Home Dashboard section was built (no extra dashboard pages).
 
-To learn more about Next.js, take a look at the following resources:
+Minor style tweaks were added for better text contrast and spacing.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Used Tailwind’s utility-first classes for faster development and consistent design.
