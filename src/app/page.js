@@ -27,7 +27,7 @@ export default function Home() {
   { id: 1, name: "Sales", value: "6.5k", percentage: "4.3%", img: customer, color: "#ffba42", textColor: "text-[#ffba42]" },
   { id: 2, name: "Customers", value: "12k", percentage: "7.2%", img: customer, color: "#00d492", textColor: "text-[#00d492]" },
   { id: 3, name: "Product", value: "47k", percentage: "8%", img: customer, color: "#4db8ff", textColor: "text-[#4db8ff]" },
-  { id: 4, name: "Revenue", value: "$128k", percentage: "3.69%", img: customer, color: "#ff4d4d", textColor: "text-[#ff4d4d]" },
+  { id: 4, name: "Revenue", value: "$128k", percentage: "3.69%", img: customer, color: "#ff4d4d", textColor: "text-[pink]" },
 ];
 
 
@@ -36,11 +36,11 @@ export default function Home() {
   };
 
   return (
-    <div className="bg-[#0e0f11] ml-16 text-gray-300 ">
+    <div className="bg-[#0e0f11] ml-20 text-gray-300 ">
       <Header onToggleSidebar={toggleSidebar} />
       <Sidebar collapsed={!isSidebarOpen} toggleCollapsed={toggleSidebar} />
 
-      <div className="grid grid-cols-4 gap-4 p-4  text-white max-sm:grid-cols-1">
+      <div className="grid grid-cols-4 gap-4 p-4   text-white max-sm:grid-cols-1">
         {data.map((item) => (
         <div key={item.id} className="flex justify-between w-full gap-4 p-4 border border-gray-800 rounded-[10px]">
           <div className="flex flex-col justify-center gap-1">
@@ -101,11 +101,11 @@ export default function Home() {
 
         </div>
 
-<div className="grid grid-cols-3 gap-0 items-center max-sm:grid-cols-1">
-        <div className="p-4 col-span-2">
+<div className="grid grid-cols-4 gap-0 items-center max-sm:grid-cols-1">
+        <div className="p-4 col-span-3">
           <DataTable columns={columns} data={sampleData} />
         </div>
-        <div className="col-span-1">
+        <div className="col-span-1 pr-4">
           <TopSellerCard />
         </div>
         </div>
