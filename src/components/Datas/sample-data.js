@@ -4,5 +4,4 @@ export const sampleData = [
   { id: "derv1ws0", amount: 837, status: "processing", email: "Monserrat44@example.com" },
   { id: "5kma53ae", amount: 874, status: "success", email: "Silas22@example.com" },
   { id: "bhqecj4p", amount: 721, status: "failed", email: "carmella@example.com" },
-  { id: "bhqecj4p", amount: 721, status: "failed", email: "carmella@example.com" },
 ]

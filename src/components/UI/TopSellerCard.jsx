@@ -2,36 +2,58 @@ import { FiEye } from "react-icons/fi";
 
 export default function TopSellerCard() {
   return (
-    <div className="p-6 rounded-xl bg-gradient-to-b from-[#1C1D20] to-[#0f1013] text-white font-sans border border-[#2A2B2F] shadow-lg hover:shadow-xl transition-all duration-300">
+    <div className=" p-4 rounded-lg  text-white font-sans border border-[#1C1D20] ">
       {/* Header */}
       <div className="flex items-center justify-between">
-        <span className="text-lg font-semibold tracking-wide">Top Seller</span>
-        <FiEye className="text-gray-400 hover:text-white transition-colors duration-300 cursor-pointer" />
+        <span className="text-lg font-semibold">Top Seller</span>
+        <a href="#" className="text-sm text-[#3B82F6] hover:underline">
+          View All
+        </a>
       </div>
 
-      {/* Profile Section */}
-      <div className="flex flex-col items-center mt-6">
-        <div className="relative">
+      {/* Number + Percentage */}
+      <div className="flex items-end gap-2 mt-2">
+        <p className="text-[28px] font-semibold">93</p>
+        <p className="text-md text-[#22C55E]">+1.3%</p>
+      </div>
+      <p className="text-md text-[#9CA3AF] mt-1 font-semibold">Country in this month</p>
+
+      {/* Country Row */}
+      <div className="flex items-center justify-between bg-[#111315] rounded-md py-3 px-3 mt-4">
+        {/* Flag + Name */}
+        <div className="flex items-center gap-2">
           <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLAGoAEKJ83pdl0QVb96RQozfXzgoFSFaliA&s"
-            alt="Profile"
-            className="w-24 h-24 rounded-full border-4 border-[#2A2B2F] object-cover"
+            src="https://flagcdn.com/w40/es.png"
+            alt="Spain flag"
+            className="w-6 h-6 rounded-full"
           />
-          <span className="absolute bottom-0 right-0 w-4 h-4 bg-green-500 border-2 border-[#1C1D20] rounded-full"></span>
+          <p className="text-md text-gray-400 font-semibold">Spain</p>
         </div>
-        <p className="mt-3 text-lg font-semibold">Travis Fuller</p>
-        <p className="text-sm text-gray-400">#1 in Sales</p>
-      </div>
 
-      {/* Stats Section */}
-      <div className="mt-6 flex items-center justify-between bg-[#2A2B2F] rounded-lg p-4">
-        <div className="text-center">
-          <p className="text-2xl font-bold">1,240</p>
-          <p className="text-xs text-gray-400">Items Sold</p>
-        </div>
-        <div className="text-center">
-          <p className="text-2xl font-bold text-green-400">+18%</p>
-          <p className="text-xs text-gray-400">Growth</p>
+        {/* Stats */}
+        <div className="flex items-center gap-3">
+          <div className="flex items-center gap-1 bg-[#132E1B] px-6 py-[4px] rounded-full">
+            {/* Green Arrow Up */}
+            <FiEye className="text-[#22C55E]" />
+            <p className="text-sm text-[#22C55E] font-bold">2.37k</p>
+          </div>
+
+          <div className="flex items-center gap-1 bg-[#2A1313] px-6 py-[4px] rounded-full">
+            {/* Red Arrow Down */}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="w-4 h-4 text-[#F87171]"
+            >
+              <path d="M20 12l-4-4-8 8" />
+            </svg>
+            <span className="text-sm text-[#F87171] font-bold">36.52k</span>
+          </div>
         </div>
       </div>
     </div>
