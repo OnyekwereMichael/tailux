@@ -4,13 +4,14 @@ import { Area, AreaChart, CartesianGrid, XAxis } from "recharts"
 import {
   Card,
   CardContent,
+  CardFooter,
   CardHeader,
-} from "@/components/ui/Card"
+} from "@/components/UI/Card"
 import {
   ChartContainer,
   ChartTooltip,
   ChartTooltipContent,
-} from "@/components/ui/Chart"
+} from "@/components/UI/Chart"
 
 const chartData = [
   { month: "January", desktop: 186 },

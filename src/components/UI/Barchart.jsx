@@ -90,7 +90,7 @@ import {
   Tooltip,
   ResponsiveContainer
 } from 'recharts';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/UI/Car';
 import Image from 'next/image';
 import dots from '@/assets/dots.svg';
 import RadioGroup from './Radiogroup';
