@@ -3,6 +3,7 @@ import { FiEye } from "react-icons/fi";
 import { HiOutlineDotsHorizontal } from "react-icons/hi";
 
 export default function SocialSourceCard() {
+  
    const data = [
     { color: "#E4405F", icon: <FaInstagram />, name: "Instagram", views: "34.36k", revenue: "$5.17k", trend: "up" },
     { color: "#1877F2", icon: <FaFacebookF />, name: "Facebook", views: "24.62k", revenue: "$4.32k", trend: "up" },
