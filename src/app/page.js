@@ -5,19 +5,19 @@
 import Image from "next/image";
 import Header from "@/components/ui/Header";
 import Sidebar from "@/components/ui/Sidebar";
-import BarChartMultiple from "@/components/ui/Barchart";
+import BarChartMultiple from "@/components/UI/Barchart";
 import customer from "@/assets/customer.svg"; 
 import { ArrowUp } from "lucide-react";
 import { useState } from "react";
-import ChartAreaDefault from "@/components/ui/Graph";
-import  DataTable  from "@/components/ui/Dattable";
+import ChartAreaDefault from "@/components/UI/Graph";
+import  DataTable  from "@/components/UI/Dattable";
 import { sampleData } from "@/components/Datas/sample-data";
 import { columns } from "@/components/Datas/columns";
-import TeamActivity from "@/components/ui/TeamActivity";
-import SocialSourceCard from "@/components/ui/SocialSource";
-import TransactionsCard from "@/components/ui/Transaction";
-import CountrySourceCard from "@/components/ui/Country";
-import TopSellerCard from "@/components/ui/TopSellerCard";
+import TeamActivity from "@/components/UI/TeamActivity";
+import SocialSourceCard from "@/components/UI/SocialSource";
+import TransactionsCard from "@/components/UI/Transaction";
+import CountrySourceCard from "@/components/UI/Country";
+import TopSellerCard from "@/components/UI/TopSellerCard";
 import BalanceCard from "@/components/UI/BalanceCard";
 import RatingCard from "@/components/UI/RatingCard";
 import EarningCard from "@/components/UI/EarningCard";
@@ -53,9 +53,12 @@ export default function Home() {
             <p className="text-sm text-[#00d492] flex items-center"> <ArrowUp size={16}/> {item.percentage}</p>
           </div>
 
-          <div className="p-2 max-w-[250px] rounded-[30%] h-[40px] w-[40px] bg-[#ffba4242]">
-            <Image src={item.img} alt="" />
-          </div>
+            <div
+      className="p-2 max-w-[250px] rounded-[30%] h-[40px] w-[40px]"
+      style={{ backgroundColor: `${item.color}42` }} // 42 makes it semi-transparent
+    >
+      <Image src={item.img} alt="" />
+    </div>
 
         </div>
         ))}        
