@@ -73,7 +73,7 @@ const data = [
   };
 
   return (
-    <div className="bg-[#0e0f11] ml-20 text-gray-300 ">
+    <div className="bg-[#0e0f11] ml-20 max-sm:ml-0 text-gray-300 ">
       <Header onToggleSidebar={toggleSidebar} />
       <Sidebar collapsed={!isSidebarOpen} toggleCollapsed={toggleSidebar} />
 
@@ -99,13 +99,13 @@ const data = [
         ))}        
       </div>
 
-        <div className="grid grid-cols-3 gap-4 justify-between p-4 max-sm:grid-cols-1">
+        <div className="grid grid-cols-3 gap-y-4 gap-x-4 justify-between p-4 max-sm:grid-cols-1 max-sm:gap-x-0 max-sm:gap-y-8">
 
           <div className="col-span-2"><BarChartMultiple /></div>
 
           <div className="flex gap-4 col-span-1 max-sm:flex-col">
 
-            <div className="w-full h-full flex flex-col justify-between gap-4">
+            <div className="w-full h-full flex flex-col justify-between gap-4 ">
               <EarningCard />
             <RatingCard labelTop="Current Rating" labelBottom="" percentage={72} strokeColor="#0ea5e9" />
             </div>
@@ -114,7 +114,7 @@ const data = [
 
              <RatingCard labelTop="Closed Rating" labelBottom="" percentage={85} strokeColor="#10B981" />
 
-              <div className="h-[70%] border rounded-xl border-gray-800 flex flex-col justify-between">
+              <div className="h-[70%] max-sm:h-full border rounded-xl border-gray-800 flex flex-col justify-between">
                <div className="p-4">
                   <p className="text-lg font-semibold">Earning</p>
                   <p className="text-lg mt-3">$16.4k</p>

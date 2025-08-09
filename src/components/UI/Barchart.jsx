@@ -34,7 +34,7 @@ export default function BarChartMultiple() {
   return (
     <Card className="bg-[#0e0f11] border border-gray-800 rounded-xl overflow-hidden">
       <CardHeader className="pb-2 px-3 sm:px-6">
-        <CardTitle className="flex w-full items-center justify-between gap-4">
+        <CardTitle className="flex w-full items-center justify-between gap-4 max-sm:flex-col">
           <div className="flex items-center gap-2">
             <p className="text-base sm:text-lg font-semibold text-gray-100 tracking-tight">
               Sales & Revenue Overview
