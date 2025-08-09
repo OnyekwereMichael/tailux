@@ -11,7 +11,9 @@ import {
   SquareMenu,
   House,
   User,
-  Settings, // <-- Added Settings icon
+  Settings,
+  Bell,
+  MessageSquare, // <-- Added Settings icon
 } from "lucide-react";
 
 export default function Sidebar({ collapsed, toggleCollapsed }) {
@@ -49,32 +51,51 @@ export default function Sidebar({ collapsed, toggleCollapsed }) {
 </div>
 
 
-          <div className="flex flex-col gap-4">
-            <div className="cursor-pointer hover:text-white p-4 bg-[#001f5d88] rounded-2xl">
-              <House className="w-7 h-7"/>
-            </div>
-            <div className="cursor-pointer hover:text-white p-4 rounded-2xl">
-              <Gift className="w-7 h-7" />
-            </div> 
-            <div className="cursor-pointer hover:text-white p-4 rounded-2xl">
-              <Grid2x2 className="w-7 h-7" />
-            </div> 
-            <div className="cursor-pointer hover:text-white p-4 rounded-2xl">
-              <SquareMenu className="w-7 h-7" />
-            </div> 
-          </div>
+ <div className="flex flex-col gap-2">
+      {/* House (unchanged) */}
+      <div className="cursor-pointer hover:text-white p-4 bg-[#001f5d88] rounded-2xl">
+        <House className="w-6 h-6" />
+      </div>
+
+     
+      <div className="cursor-pointer hover:text-white p-4 rounded-2xl">
+        <User className="w-6 h-6" /> 
+      </div>
+
+      {/* <div className="cursor-pointer hover:text-white p-4 rounded-2xl">
+        <Settings className="w-7 h-7" /> 
+      </div> */}
+
+      <div className="cursor-pointer hover:text-white p-4 rounded-2xl">
+        <MessageSquare className="w-6 h-6" /> 
+      </div>
+
+      
+      <div className="cursor-pointer hover:text-white p-4 rounded-2xl">
+        <Bell className="w-6 h-6" /> 
+      </div>
+
+      <div className="cursor-pointer hover:text-white p-4 rounded-2xl">
+        <Gift className="w-7 h-7" /> {/* New extra icon */}
+      </div>
+    </div>
         </div>
 
         {/* Spacer */}
         <div className="flex flex-col items-center gap-6">
-          <div className="">
-     <img
-              src="https://media.istockphoto.com/id/1399565382/photo/young-happy-mixed-race-businessman-standing-with-his-arms-crossed-working-alone-in-an-office.jpg?s=612x612&w=0&k=20&c=buXwOYjA_tjt2O3-kcSKqkTp2lxKWJJ_Ttx2PhYe3VM="
-              alt="Profile"
-              className="w-14 h-14 rounded-full border border-gray-700"
-            />
-          </div>
           <Settings className="h-7 w-7 text-gray-400 cursor-pointer hover:text-white" />
+        <div className="relative w-14 h-14">
+  <img
+    src="https://media.istockphoto.com/id/1399565382/photo/young-happy-mixed-race-businessman-standing-with-his-arms-crossed-working-alone-in-an-office.jpg?s=612x612&w=0&k=20&c=buXwOYjA_tjt2O3-kcSKqkTp2lxKWJJ_Ttx2PhYe3VM="
+    alt="Profile"
+    className="w-14 h-14 rounded-full border border-gray-700"
+  />
+  
+  {/* Green active dot */}
+  <span className="absolute top-[10px] right-0 block w-3 h-3 bg-green-500 border-2 border-white rounded-full"></span>
+</div>
+
+          
         </div>
       </div>
 
