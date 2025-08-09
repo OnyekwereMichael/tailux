@@ -68,7 +68,7 @@ export default function Sidebar({ collapsed, toggleCollapsed }) {
       {/* Fixed Vertical Icon Bar */}
       <div className="w-20 bg-[#0e0f11] flex flex-col items-center justify-between h-full py-4 border-r border-gray-800 max-sm:hidden">
        
-        <div className="flex flex-col items-center gap-6 mt-6 text-gray-400"> 
+        <div className="flex flex-col items-center gap-6 mt-1 text-gray-400"> 
           <div className="inline-block px-4 py-2 text-xl font-extrabold tracking-wider text-white bg-gradient-to-r from-sky-500 to-blue-700 rounded-lg shadow-md">
   TA
 </div>
