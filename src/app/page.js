@@ -3,16 +3,14 @@
 
 "use client";
 import Image from "next/image";
-import Header from "@/components/ui/Header";
-import Sidebar from "@/components/ui/Sidebar";
+import Header from "@/components/UI/Header";
+import Sidebar from "@/components/UI/Sidebar";
 import BarChartMultiple from "@/components/UI/Barchart";
 import customer from "@/assets/customer.svg"; 
 import { ArrowUp } from "lucide-react";
 import { useState } from "react";
 import ChartAreaDefault from "@/components/UI/Graph";
 import  DataTable  from "@/components/UI/Dattable";
-import { sampleData } from "@/components/Datas/sample-data";
-import { columns } from "@/components/Datas/columns";
 import TeamActivity from "@/components/UI/TeamActivity";
 import SocialSourceCard from "@/components/UI/SocialSource";
 import TransactionsCard from "@/components/UI/Transaction";
