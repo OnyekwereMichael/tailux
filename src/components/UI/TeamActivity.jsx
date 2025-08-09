@@ -38,7 +38,7 @@ const activities = [
 
 export default function TeamActivity() {
   return (
-    <div className="ml-4 border border-[#1C1D20]  text-white rounded-lg p-4">
+    <div className="ml-4  max-sm:mx-3 max-sm:mt-4  border border-[#1C1D20]  text-white rounded-lg p-4">
       {/* Header */}
       <div className="flex justify-between items-center mb-4">
         <h2 className="text-lg font-semibold">Team Activity</h2>

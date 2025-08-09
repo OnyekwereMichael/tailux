@@ -15,7 +15,7 @@ export default function SocialSourceCard() {
   ];
 
   return (
-    <div className="border border-[#1C1D20]  rounded-lg p-4 text-white">
+    <div className="border border-[#1C1D20] max-sm:mx-3  rounded-lg p-4 text-white">
       {/* Header */}
       <div className="flex justify-between items-start mb-3">
         <div>

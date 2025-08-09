@@ -2,7 +2,7 @@ import { FiEye } from "react-icons/fi";
 
 export default function CountrySourceCard() {
   return (
-    <div className=" p-4 rounded-lg  text-white font-sans border border-[#1C1D20] ">
+    <div className="max-sm:mx-3  p-4 rounded-lg  text-white font-sans border border-[#1C1D20] ">
       {/* Header */}
       <div className="flex items-center justify-between">
         <span className="text-lg font-semibold">Country Source</span>

@@ -1,7 +1,74 @@
-export const sampleData = [
-  { id: "m5gr84i9", name: "Ken", category: "success", brand: "ken99@example.com", price: 100, stock: 50, view: 1000 },
-  { id: "3u1reuv4", name: "Abe", category: "success", brand: "Abe45@example.com", price: 200, stock: 30, view: 800 },
-  { id: "derv1ws0", name: "Monserrat", category: "processing", brand: "Monserrat44@example.com", price: 300, stock: 20, view: 600 },
-  { id: "5kma53ae", name: "Silas", category: "success", brand: "Silas22@example.com", price: 400, stock: 10, view: 400 },
-  { id: "bhqecj4p", name: "Carmella", category: "failed", brand: "carmella@example.com", price: 500, stock: 0, view: 200 },
-]
+// export const sampleData = [
+//  {
+//     name: "Copier",
+//     id: "1718635406",
+//     category: "Tablets",
+//     brand: <FaMicrosoft className="text-yellow-500 text-xl" />,
+//     price: 107.45,
+//     stockStatus: "Available",
+//     stock: "8.04k",
+//     views: "1.23k",
+//     change: "+7.65%",
+//     img: "https://via.placeholder.com/40"
+//   },
+//   {
+//     name: "Clock",
+//     id: "6595752310",
+//     category: "Tablets",
+//     brand: <FaGoogle className="text-red-500 text-xl" />,
+//     price: 599.75,
+//     stockStatus: "Available",
+//     stock: "2.58k",
+//     views: "65.39k",
+//     change: "+2.82%",
+//     img: "https://via.placeholder.com/40"
+//   },
+//   {
+//     name: "Curling iron",
+//     id: "5870577187",
+//     category: "Gaming consoles",
+//     brand: <FaPinterest className="text-red-500 text-xl" />,
+//     price: 784.94,
+//     stockStatus: "Limited Supply",
+//     stock: "22",
+//     views: "23.33k",
+//     change: "-1.07%",
+//     img: "https://via.placeholder.com/40"
+//   },
+//   {
+//     name: "Curling iron",
+//     id: "7543583555",
+//     category: "Tablets",
+//     brand: <FaProductHunt className="text-blue-500 text-xl" />,
+//     price: 502.23,
+//     stockStatus: "Available",
+//     stock: "3.56k",
+//     views: "68.12k",
+//     change: "-0.25%",
+//     img: "https://via.placeholder.com/40"
+//   },
+//   {
+//     name: "Bulb",
+//     id: "3711580971",
+//     category: "Smartphones",
+//     brand: <FaProductHunt className="text-blue-500 text-xl" />,
+//     price: 878.12,
+//     stockStatus: "Not available",
+//     stock: "0",
+//     views: "89.15k",
+//     change: "+5.03%",
+//     img: "https://via.placeholder.com/40"
+//   },
+//   {
+//     name: "Backup charger",
+//     id: "8940068402",
+//     category: "Drones",
+//     brand: <FaBehance className="text-blue-400 text-xl" />,
+//     price: 223.35,
+//     stockStatus: "Available",
+//     stock: "877",
+//     views: "32.83k",
+//     change: "+9.98%",
+//     img: "https://via.placeholder.com/40"
+//   }
+// ]

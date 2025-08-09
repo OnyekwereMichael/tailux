@@ -10,7 +10,7 @@ import customer from "@/assets/customer.svg";
 import { ArrowUp } from "lucide-react";
 import { useState } from "react";
 import ChartAreaDefault from "@/components/ui/Graph";
-import { DataTable } from "@/components/ui/Dattable";
+import  DataTable  from "@/components/ui/Dattable";
 import { sampleData } from "@/components/Datas/sample-data";
 import { columns } from "@/components/Datas/columns";
 import TeamActivity from "@/components/ui/TeamActivity";
@@ -18,6 +18,9 @@ import SocialSourceCard from "@/components/ui/SocialSource";
 import TransactionsCard from "@/components/ui/Transaction";
 import CountrySourceCard from "@/components/ui/Country";
 import TopSellerCard from "@/components/ui/TopSellerCard";
+import BalanceCard from "@/components/UI/BalanceCard";
+import RatingCard from "@/components/UI/RatingCard";
+import EarningCard from "@/components/UI/EarningCard";
 
 export default function Home() {
 
@@ -58,33 +61,20 @@ export default function Home() {
         ))}        
       </div>
 
-        <div className="grid grid-cols-3 gap-4 justify-between p-4">
+        <div className="grid grid-cols-3 gap-4 justify-between p-4 max-sm:grid-cols-1">
 
           <div className="col-span-2"><BarChartMultiple /></div>
 
-          <div className="flex gap-4 col-span-1">
+          <div className="flex gap-4 col-span-1 max-sm:flex-col">
 
             <div className="w-full h-full flex flex-col justify-between gap-4">
-              <div className="h-[70%] border rounded-xl border-gray-800 p-4">
-                <p className="text-lg font-semibold">Earning</p>
-                <p className="text-lg mt-3">$16.4k</p>
-              </div>
-              <div className="h-[25%] flex gap-4 items-center justify-center border rounded-xl border-gray-800 p-4">
-                <span>
-                  <p className="text-lg">45%</p>
-                </span>
-                <p className="text-lg font-semibold">Closed Orders </p>
-              </div>
+              <EarningCard />
+            <RatingCard labelTop="Current Rating" labelBottom="" percentage={72} strokeColor="#0ea5e9" />
             </div>
             
             <div className="w-full h-full flex flex-col justify-between gap-4">
 
-              <div className="h-[25%] flex gap-4 items-center justify-center border rounded-xl border-gray-800 p-4">
-                <span>
-                  <p className="text-lg font-semibold">45%</p>
-                </span>
-                <p className="text-lg">Closed Orders </p>
-              </div>
+             <RatingCard labelTop="Closed Rating" labelBottom="" percentage={85} strokeColor="#10B981" />
 
               <div className="h-[70%] border rounded-xl border-gray-800 flex flex-col justify-between">
                <div className="p-4">
@@ -101,16 +91,17 @@ export default function Home() {
 
         </div>
 
-<div className="grid grid-cols-3 gap-0 items-center">
+<div className="grid grid-cols-3 gap-0 items-center max-sm:grid-cols-1">
         <div className="p-4 col-span-2">
-          <DataTable columns={columns} data={sampleData} />
+          <DataTable />
         </div>
         <div className="col-span-1">
+          <BalanceCard />
           <TopSellerCard />
         </div>
         </div>
 
-       <div className="grid grid-cols-3 gap-4 ">
+       <div className="grid grid-cols-3 gap-4 max-sm:grid-cols-1 ">
        <TeamActivity />
        <div className="grid grid-cols-1 gap-4">
      <SocialSourceCard />
