@@ -13,32 +13,55 @@ import {
   User,
   Settings,
   Bell,
-  MessageSquare, // <-- Added Settings icon
+  MessageSquare,
+  LayoutDashboard,
+  BarChart3,
+  ShoppingCart,
+  Bitcoin,
+  Landmark,
+  Users,
+  FileBarChart,
+  GraduationCap,
+  MapPin,
+  BookOpen,
+  PenTool,
+  Stethoscope,
+  Briefcase,
+  Monitor,
+  Video,
+  ClipboardList,
+  CalendarDays,
+  PieChart, // <-- Added Settings icon
 } from "lucide-react";
 
 export default function Sidebar({ collapsed, toggleCollapsed }) {
   const [activeItem, setActiveItem] = useState("Sales");
 
-  const menuItems = [
-    { label: "Dashboards", hasSubmenu: true },
-    { label: "Sales", active: true },
-    { label: "CRM Analytics" },
-    { label: "Orders" },
-    { label: "Cryptocurrency", hasSubmenu: true },
-    { label: "Banking", hasSubmenu: true },
-    { label: "Personal" },
-    { label: "CMS Analytics" },
-    { label: "Influencer" },
-    { label: "Travel" },
-    { label: "Teacher" },
-    { label: "Education" },
-    { label: "Authors" },
-    { label: "Doctor" },
-    { label: "Employees" },
-    { label: "Workspaces" },
-    { label: "Meetings" },
-    { label: "Projects Board" }
-  ];
+ const menuItems = [
+  { label: "Dashboards", icon: LayoutDashboard, hasSubmenu: true },
+  { label: "Sales", icon: BarChart3, active: true },
+  { label: "CRM Analytics", icon: PieChart },
+  { label: "Orders", icon: ShoppingCart },
+  { label: "Cryptocurrency", icon: Bitcoin, hasSubmenu: true },
+  { label: "Banking", icon: Landmark, hasSubmenu: true },
+  { label: "Personal", icon: User },
+  { label: "CMS Analytics", icon: FileBarChart },
+  { label: "Influencer", icon: Users },
+  { label: "Travel", icon: MapPin },
+  { label: "Teacher", icon: GraduationCap },
+  { label: "Education", icon: BookOpen },
+  { label: "Authors", icon: PenTool },
+  { label: "Doctor", icon: Stethoscope },
+  { label: "Employees", icon: Briefcase },
+  { label: "Workspaces", icon: Monitor },
+  { label: "Meetings", icon: Video },
+  { label: "Projects Board", icon: ClipboardList },
+
+  // New additions
+  { label: "Settings", icon: Settings },
+  { label: "Messages", icon: MessageSquare },
+  { label: "Calendar", icon: CalendarDays }
+];
 
   return (
     <div className="flex h-screen fixed top-0 left-0 z-50">
@@ -150,15 +173,18 @@ export default function Sidebar({ collapsed, toggleCollapsed }) {
         {/* User Profile */}
         <div className="p-4 border-t border-gray-800 flex items-center justify-between">
           <div className="flex items-center space-x-3">
+            <div>
             {/* Random placeholder profile image */}
             <img
               src="https://media.istockphoto.com/id/1399565382/photo/young-happy-mixed-race-businessman-standing-with-his-arms-crossed-working-alone-in-an-office.jpg?s=612x612&w=0&k=20&c=buXwOYjA_tjt2O3-kcSKqkTp2lxKWJJ_Ttx2PhYe3VM="
               alt="Profile"
               className="w-10 h-10 rounded-full border border-gray-700"
             />
+    
+  </div>
             <div className="flex-1 min-w-0">
               <p className="text-xs text-gray-400 truncate">Michael O</p>
-              <p className="text-xs text-gray-400 truncate">
+              <p className="text-xs mt-1 text-gray-400 truncate">
                 08131510808
               </p>
             </div>
