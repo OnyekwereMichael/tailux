@@ -7,7 +7,7 @@ import Header from "@/components/UI/Header";
 import Sidebar from "@/components/UI/Sidebar";
 import BarChartMultiple from "@/components/UI/Barchart";
 import customer from "@/assets/customer.svg"; 
-import { ArrowUp } from "lucide-react";
+import { ArrowUp, BarChart3Icon, Users } from "lucide-react";
 import { useState } from "react";
 import ChartAreaDefault from "@/components/UI/Graph";
 import  DataTable  from "@/components/UI/Dattable";
@@ -19,16 +19,52 @@ import TopSellerCard from "@/components/UI/TopSellerCard";
 import BalanceCard from "@/components/UI/BalanceCard";
 import RatingCard from "@/components/UI/RatingCard";
 import EarningCard from "@/components/UI/EarningCard";
+import { DollarSign, Package, BarChart3 } from "lucide-react";
+
 
 export default function Home() {
 
   const [isSidebarOpen, setSidebarOpen] = useState(true);
 
- const data = [
-  { id: 1, name: "Sales", value: "6.5k", percentage: "4.3%", img: customer, color: "#ffba42", textColor: "text-[#ffba42]" },
-  { id: 2, name: "Customers", value: "12k", percentage: "7.2%", img: customer, color: "#00d492", textColor: "text-[#00d492]" },
-  { id: 3, name: "Product", value: "47k", percentage: "8%", img: customer, color: "#4db8ff", textColor: "text-[#4db8ff]" },
-  { id: 4, name: "Revenue", value: "$128k", percentage: "3.69%", img: customer, color: "#ff4d4d", textColor: "text-[#ff4d4d]" },
+
+
+const data = [
+  {
+    id: 1,
+    name: "Sales",
+    value: "6.5k",
+    percentage: "4.3%",
+    icon: <BarChart3Icon className="w-6 h-6" />, // Sales → Bar Chart
+    color: "#ffba42",
+    textColor: "text-[#ffba42]",
+  },
+  {
+    id: 2,
+    name: "Customers",
+    value: "12k",
+    percentage: "7.2%",
+    icon: <Users className="w-5 h-5" />,
+    color: "#00d492",
+    textColor: "text-[#00d492]",
+  },
+  {
+    id: 3,
+    name: "Product",
+    value: "47k",
+    percentage: "8%",
+    icon: <Package className="w-6 h-6" />, // Product → Package box icon
+    color: "#4db8ff",
+    textColor: "text-[#4db8ff]",
+  },
+  {
+    id: 4,
+    name: "Revenue",
+    value: "$128k",
+    percentage: "3.69%",
+    icon: <DollarSign className="w-6 h-6" />, // Revenue → Dollar sign icon
+    color: "#ff4d4d",
+    textColor: "text-[#ff4d4d]",
+  },
 ];
 
 
@@ -55,7 +91,8 @@ export default function Home() {
       className="p-2 max-w-[250px] rounded-[30%] h-[40px] w-[40px]"
       style={{ backgroundColor: `${item.color}42` }} // 42 makes it semi-transparent
     >
-      <Image src={item.img} alt="" />
+      {/* <Image src={item.img} alt="" /> */}
+      <span className={item.textColor}>{item.icon}</span>
     </div>
 
         </div>
