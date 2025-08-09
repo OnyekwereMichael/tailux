@@ -36,13 +36,13 @@ export default function Home() {
   };
 
   return (
-    <div className="bg-[#0e0f11] ml-16 text-gray-300 ">
+    <div className="bg-[#0e0f11] ml-20 text-gray-300 ">
       <Header onToggleSidebar={toggleSidebar} />
       <Sidebar collapsed={!isSidebarOpen} toggleCollapsed={toggleSidebar} />
 
-      <div className="flex gap-8 p-4  text-white">
+      <div className="grid grid-cols-4 gap-3 max-sm:grid-cols-1  p-4  text-white">
         {data.map((item) => (
-        <div key={item.id} className="flex justify-between w-full gap-4 p-4 border border-gray-800 rounded-[20px]">
+        <div key={item.id} className="flex justify-between w-full gap-4 p-4 border border-gray-800 rounded-[10px]">
           <div className="flex flex-col justify-center gap-1">
             <p className="text-gray-300 font-semibold">{item.name}</p>
             <p className={`text-2xl my-2 font-bold ${item.textColor}`}>{item.value}</p>
@@ -58,22 +58,22 @@ export default function Home() {
         ))}        
       </div>
 
-        <div className="flex gap-4 justify-between p-4">
+        <div className="grid grid-cols-3 gap-4 justify-between p-4">
 
-          <div className="w-[60%]"><BarChartMultiple /></div>
+          <div className="col-span-2"><BarChartMultiple /></div>
 
-          <div className="w-[37%] flex gap-4">
+          <div className="flex gap-4 col-span-1">
 
             <div className="w-full h-full flex flex-col justify-between gap-4">
               <div className="h-[70%] border rounded-xl border-gray-800 p-4">
                 <p className="text-lg font-semibold">Earning</p>
-                <p className="text-xl mt-3">$16.4k</p>
+                <p className="text-lg mt-3">$16.4k</p>
               </div>
               <div className="h-[25%] flex gap-4 items-center justify-center border rounded-xl border-gray-800 p-4">
                 <span>
-                  <p>45%</p>
+                  <p className="text-lg">45%</p>
                 </span>
-                <p>Closed Orders </p>
+                <p className="text-lg font-semibold">Closed Orders </p>
               </div>
             </div>
             
@@ -81,15 +81,15 @@ export default function Home() {
 
               <div className="h-[25%] flex gap-4 items-center justify-center border rounded-xl border-gray-800 p-4">
                 <span>
-                  <p>45%</p>
+                  <p className="text-lg font-semibold">45%</p>
                 </span>
-                <p>Closed Orders </p>
+                <p className="text-lg">Closed Orders </p>
               </div>
 
               <div className="h-[70%] border rounded-xl border-gray-800 flex flex-col justify-between">
                <div className="p-4">
-                  <p>Earning</p>
-                  <p className="text-2xl">$16.4k</p>
+                  <p className="text-lg font-semibold">Earning</p>
+                  <p className="text-lg mt-3">$16.4k</p>
                </div>
 
                <div>
