@@ -6,7 +6,7 @@ export default function CountrySourceCard() {
       {/* Header */}
       <div className="flex items-center justify-between">
         <span className="text-lg font-semibold">Country Source</span>
-        <a href="#" className="text-sm text-[#3B82F6] hover:underline">
+        <a href="#" className="text-sm text-[#3B82F6] hover:underline border-b border-[#3B82F6] border-dotted">
           View All
         </a>
       </div>

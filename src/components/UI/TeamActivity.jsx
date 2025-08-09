@@ -42,7 +42,7 @@ export default function TeamActivity() {
       {/* Header */}
       <div className="flex justify-between items-center mb-4">
         <h2 className="text-lg font-semibold">Team Activity</h2>
-        <button className="text-sm text-blue-400 hover:underline">View All</button>
+        <button className="text-sm text-blue-400 border-b border-[#3B82F6] border-dotted hover:underline">View All</button>
       </div>
 
       {/* Activities */}

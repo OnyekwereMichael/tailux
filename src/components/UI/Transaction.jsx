@@ -77,7 +77,7 @@ export default function TransactionsCard() {
       {/* Header */}
       <div className="flex justify-between items-center mb-4">
         <h2 className="text-lg font-semibold">Transactions</h2>
-        <button className="text-xs text-blue-400 hover:underline">
+        <button className="text-xs border-b border-[#3B82F6] border-dotted text-blue-400 hover:underline">
           View All
         </button>
       </div>
